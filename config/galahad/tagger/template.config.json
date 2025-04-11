@@ -1,0 +1,35 @@
+{
+  "epochs": 20,
+
+  "data_format" : "tsv",
+
+  "fields" : {"tokens" : 0, "tags" : 1, "lemmata": 2},
+
+  "max_chunk_size" : 50,
+
+  "base_dir" : "/vol1/data/tagger/galahad-corpus-data/training-data/",
+
+  "combination" : "1400-1600",
+
+  "model_output_path" : "../data/tagging/tagging_models/pos_model_tdn_14-16",
+
+  "base_model" : "emanjavacas/GysBERT",
+
+  "log_path" : "Log/",
+
+  "lemmatizer" : {
+    "lem_tokenizer" : "../data/lemmatizer/tdn_byt5_model/",
+    "lem_model" : "../data/lemmatizer/tdn_byt5_model/",
+    "lexicon_path" : "../data/lexicon/lexicon.pickle",
+    "chop_pos_to_main" : false
+  },
+
+  "lemmatizer_other" : {
+     "lem_tokenizer" : "../data/byt5-lem-hilex-19",
+     "lem_model" : "../data/byt5-lem-hilex-19/checkpoint-53500/",
+     "lexicon_path" : "../data/lexicon/lexicon.pickle",
+     "chop_pos_to_main" : true
+  },
+
+  "skip_training" : false
+}
