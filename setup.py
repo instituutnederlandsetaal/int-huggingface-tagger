@@ -15,7 +15,7 @@ setup(
     # (But "hardcoding" them is often simpler for library use.)
     install_requires=[
        "transformers",
-       "torch==1.11.0+cpu ",
+       "torch==2.4.0 ",
        "torchvision==0.10.0+cpu ",
        "torchaudio==0.9.0 ",
        "transformers[torch]",
