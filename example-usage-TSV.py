@@ -7,7 +7,6 @@ import os
 import json
 from lemmatizer.TaggerLemmatizer import TaggerLemmatizer
 
-# should be called tagger-lemmatizer-for-tokenized-tei
 def main():
   t = TaggerLemmatizer(sys.argv[1])
   t.init()

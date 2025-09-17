@@ -36,7 +36,7 @@ python3.10 -m venv venv
 source ./venv/bin/activate
 bash requirements.sh
 cd ..
-git clone https://github.com/INL/galahad-huggingface-models
+git lfs clone https://github.com/INL/galahad-huggingface-models
 cd int-huggingface-tagger
 ln -s ../galahad-huggingface-models/models/ .
 python example-usage.py config/galahad/tagger-lemmatizer/ALL.tdn.config example-data/eline.txt /tmp/output.txt
