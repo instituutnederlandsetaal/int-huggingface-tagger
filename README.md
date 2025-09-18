@@ -50,7 +50,7 @@ Tagger-lemmatizer
 Run:
 ----
 
-* On plain text: `python scripts/example-usage.py <configuration file> <input text> <output tsv> 
+* On plain text: `python scripts/example-usage.py <configuration file> <input text> <output tsv>`
   ```python example-usage.py config/galahad/tagger-lemmatizer/ALL.tdn.config example-data/eline.txt /tmp/output.txt```
 
 * On (tokenized!) TEI: `python scripts/example-usage-TEI.py config/galahad/tagger-lemmatizer/ALL.tdn.config example-data/example.tei /tmp/example.tagged.tei```
