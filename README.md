@@ -32,9 +32,9 @@ Assuming you have installed Git LFS and you work on linux:
 ```
 git clone https://github.com/INL/int-huggingface-tagger
 cd int-huggingface-tagger
-python3.10 -m venv venv
+python3 -m venv venv
 source ./venv/bin/activate
-bash requirements.sh
+pip install .
 cd ..
 git lfs clone https://github.com/INL/galahad-huggingface-models
 cd int-huggingface-tagger
