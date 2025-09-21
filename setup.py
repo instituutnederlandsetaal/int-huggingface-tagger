@@ -3,7 +3,6 @@ from setuptools import setup, find_packages
 
 # --- Set environment variable (only during installation) ---
 
-os.environ["MY_PACKAGE_ENV"] = "1"
 os.environ["SKLEARN_ALLOW_DEPRECATED_SKLEARN_PACKAGE_INSTALL"]="True"
 
 # --- Read dependencies from requirements.txt ---
