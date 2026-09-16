@@ -141,7 +141,10 @@ class Lemmatizer:
             lemma = self.lemmatize_byt5(token)
             token["info"] = "byt5"
             token["lexicon"] = "byt5"
-        if token["pos"] != "LET":
+        # Assign final lemma
+        if token["pos"] == "LET" or token["pos"] == "PC":
+            token["lemma"] = token["word"]
+        else:
             token["lemma"] = lemma
 
 
